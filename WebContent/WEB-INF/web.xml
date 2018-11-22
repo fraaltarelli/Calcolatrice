@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+    version="3.0">
+    <display-name>Calcolatrice</display-name>
+    <servlet>
+        <servlet-name>Piu</servlet-name>
+        <servlet-class>it.objectmethod.jsp.calcolatrice.Piu</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Meno</servlet-name>
+        <servlet-class>it.objectmethod.jsp.calcolatrice.Meno</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Per</servlet-name>
+        <servlet-class>it.objectmethod.jsp.calcolatrice.Per</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Diviso</servlet-name>
+        <servlet-class>it.objectmethod.jsp.calcolatrice.Diviso</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Piu</servlet-name>
+        <url-pattern>/Calcolatrice</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Meno</servlet-name>
+        <url-pattern>/Calcolatrice2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Per</servlet-name>
+        <url-pattern>/Calcolatrice3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Diviso</servlet-name>
+        <url-pattern>/Calcolatrice4</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
