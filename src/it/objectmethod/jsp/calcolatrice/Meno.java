@@ -34,8 +34,7 @@ public class Meno extends HttpServlet {
 			String secondoN= request.getParameter("secondonumero");
 			int primoNumero =Integer.parseInt(primoN);
 			int secondoNumero =Integer.parseInt(secondoN);
-			int numeroSottratto = primoNumero - secondoNumero;
-			request.setAttribute("risultato", numeroSottratto);
+			result = primoNumero - secondoNumero;
 
 		}   catch(NumberFormatException e) {
 			error="Digitare dei numeri";

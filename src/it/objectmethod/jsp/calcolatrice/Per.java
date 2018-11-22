@@ -34,10 +34,9 @@ public class Per extends HttpServlet {
 			String secondoN= request.getParameter("secondonumero");
 			int primoNumero =Integer.parseInt(primoN);
 			int secondoNumero =Integer.parseInt(secondoN);
-			int numeroMoltiplicato = primoNumero * secondoNumero;
-			request.setAttribute("risultato", numeroMoltiplicato);
+			result = primoNumero * secondoNumero;
 
-		}    catch(NumberFormatException e) {
+		}   catch(NumberFormatException e) {
 			error="Digitare dei numeri";
 		}   catch(ArithmeticException e2) {
 			error="Impossibile dividere per 0";
